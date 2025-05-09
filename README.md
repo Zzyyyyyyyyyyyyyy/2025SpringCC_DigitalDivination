@@ -1,13 +1,13 @@
 # Digital Divination
 
-An interactive digital divination system that combines weather data and emotions. Create unique visual experiences and oracle messages through real-time New York weather data and user emotional input.
+Digital divination system that is interactive to join weather data and emotions. Design personalised visual experiences and oracle messages using real time New York weather data and real time user emotional input.
 
-## Features ✨
+## Features 
 
 ### 1. Real-time Weather Integration
 - Live weather data from New York
 - Support for various weather conditions: Clear, Cloudy, Rain, Thunderstorm, Snow, etc.
-- Display of temperature (both Celsius and Fahrenheit) and humidity information
+– Celsius and Fahrenheit as well as humidity information display
 
 ### 2. Emotion Recognition System
 Supports multiple emotion categories, each with unique visual effects:
@@ -52,14 +52,14 @@ Supports multiple emotion categories, each with unique visual effects:
 
 1. Launch the System
    - Open the welcome page
-   - Observe the background particle effects (reflecting current New York weather)
+   – Watch the background particle effect (mirroring the current New York’s weather).
 
 2. Input Emotion
    - Describe your emotion in the input field
    - Use preset emotion words or free description
 
 3. Receive Oracle
-   - System generates unique oracle messages based on weather and emotion
+   – System creates original oracle messages using weather and emotions.
    - Observe changes in particle effects
 
 4. Share Results
@@ -67,23 +67,23 @@ Supports multiple emotion categories, each with unique visual effects:
    - Choose sharing method (native share or copy)
 
 5. Interface Control
-   - Use the button in the top-right corner to toggle interface visibility
+   – To hide or show the interface use the button in the top-right corner.
    - Focus on particle effects when interface is hidden
 
-## Technical Implementation 🛠️
+## Technical Implementation 
 
 - Particle system and animation effects using p5.js
 - Real-time weather data from OpenWeatherMap API
 - HSB color mode for smooth color transitions
 - Responsive design for different screen sizes
 
-## Important Notes ⚠️
+## Important Notes 
 
 - Stable internet connection required for real-time weather data
 - Modern browser recommended for best experience
 - Sharing functionality may vary across different devices
 
-## Future Prospects 🔮
+## Future Prospects 
 
 - Support for additional cities' weather data
 - More emotion categories and effects
@@ -91,14 +91,14 @@ Supports multiple emotion categories, each with unique visual effects:
 - History tracking functionality
 - Additional sharing options
 
-## Installation and Setup 🔧
+## Installation and Setup 
 
 1. Clone the repository
 2. Open index.html in a modern web browser
 3. Ensure you have a stable internet connection
 4. Allow location access if prompted (for weather data)
 
-## Dependencies 📚
+## Dependencies 
 
 - p5.js for graphics and animations
 - OpenWeatherMap API for weather data
@@ -106,4 +106,4 @@ Supports multiple emotion categories, each with unique visual effects:
 
 ---
 
-Created with ❤️ for Digital Divination Project
+Created with for Digital Divination Project
