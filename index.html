@@ -3,35 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Oracle Divination Ritual</title>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
-    <script src="sketch.js"></script>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #000;
-            color: #fff;
-            font-family: sans-serif;
-        }
-        canvas {
-            display: block;
-        }
-        #container {
-            position: absolute;
-            text-align: center;
-            z-index: 10;
-        }
-    </style>
+    <title>Digital Divination</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Weather Oracle Divination Ritual</h1>
-        <!-- p5.js will create input and button here -->
+    <div id="canvas-container"></div>
+    <div class="app-container">
+        <!-- Welcome Screen -->
+        <div class="screen" id="welcome-screen">
+            <h1>Digital Divination</h1>
+            <p>Discover the mystical connection between your emotions and the weather</p>
+            <button class="start-btn" onclick="showInputScreen()">Begin Journey</button>
+        </div>
+
+        <!-- Emotion Input Screen -->
+        <div class="screen" id="input-screen" style="display: none;">
+            <h2>How are you feeling?</h2>
+            <div class="emotion-input-container">
+                <input type="text" id="emotion-input" placeholder="Describe your current mood or emotion...">
+                <div class="emotion-suggestions" id="emotion-suggestions"></div>
+            </div>
+            <div class="button-group">
+                <button class="back-btn" onclick="showWelcomeScreen()">Back</button>
+                <button class="divine-btn" onclick="startDivination()">Start Divination</button>
+            </div>
+        </div>
+
+        <!-- Oracle Screen -->
+        <div class="screen" id="oracle-screen" style="display: none;">
+            <div class="oracle-content">
+                <div class="weather-info">
+                    <span id="weather-type"></span>
+                    <span id="temperature"></span>
+                    <span id="humidity"></span>
+                </div>
+                <div class="oracle-message" id="oracle-message"></div>
+            </div>
+            <div class="button-group">
+                <button class="back-btn" onclick="showInputScreen()">Try Another Reading</button>
+                <button class="share-btn" onclick="shareReading()">Share Reading</button>
+            </div>
+        </div>
+
+        <!-- Loading Screen -->
+        <div class="screen" id="loading-screen" style="display: none;">
+            <div class="loading-animation">
+                <div class="crystal"></div>
+            </div>
+            <p>Consulting the oracle...</p>
+        </div>
     </div>
+    <script src="sketch.js"></script>
 </body>
 </html> 
