@@ -70,34 +70,6 @@ Supports multiple emotion categories, each with unique visual effects:
    – To hide or show the interface use the button in the top-right corner.
    - Focus on particle effects when interface is hidden
 
-## Technical Implementation 
-
-- Particle system and animation effects using p5.js
-- Real-time weather data from OpenWeatherMap API
-- HSB color mode for smooth color transitions
-- Responsive design for different screen sizes
-
-## Important Notes 
-
-- Stable internet connection required for real-time weather data
-- Modern browser recommended for best experience
-- Sharing functionality may vary across different devices
-
-## Future Prospects 
-
-- Support for additional cities' weather data
-- More emotion categories and effects
-- Introduction of sound effects
-- History tracking functionality
-- Additional sharing options
-
-## Installation and Setup 
-
-1. Clone the repository
-2. Open index.html in a modern web browser
-3. Ensure you have a stable internet connection
-4. Allow location access if prompted (for weather data)
-
 ## Dependencies 
 
 - p5.js for graphics and animations
